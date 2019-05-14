@@ -1,0 +1,33 @@
+<!doctype html>
+
+<button id="waveMe">
+    TheWave
+</button>
+
+<style>
+body {
+  margin:0;
+  border:0;
+  padding:0;
+}
+#waveMe {
+    width: 100%;
+    height: 100%;
+    padding:0;
+    border:none;
+    margin:0;
+    --wave-background-image: url('./texture-pool.jpg');
+}
+#waveMe:focus {
+    outline: none;
+}
+#waveMe.animating {
+    background-image: paint(ripple);
+}
+</style>
+
+<script src=".\index.js"></script>
+
+<footer>
+    <a href="https://drafts.css-houdini.org/css-paint-api/">CSS Paint API</a>
+</footer>

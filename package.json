@@ -1,0 +1,96 @@
+{
+  "name": "wavesjs",
+  "version": "1.0.0",
+  "description": "An interactive 2d waves canvas experiment, implemented as a CSS PaintWorklet",
+  "main": "./src/index.js",
+  "scripts": {
+    "install": "npm install -g parcel-bundler",
+    "build": "parcel build ./src/index.html",
+    "start": "parcel ./src/worklet.js ./src/index.html"
+  },
+  "keywords": [
+    "javascript",
+    "canvas",
+    "paintworklet",
+    "waves"
+  ],
+  "author": "Joham <jklarenbeek@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10.15.1",
+    "npm": ">= 6.4.1"
+  },
+  "sideEffects": false,
+  "postcss": {
+    "plugins": {
+      "postcss-normalize": {},
+      "postcss-preset-env": {},
+      "autoprefixer": {}
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuildIns": "false",
+          "modules": "auto",
+          "loose": true,
+          "targets": {
+            "safari": "tp",
+            "chrome": "last 1 version",
+            "firefox": "last 1 version"
+          }
+        }
+      ]
+    ],
+    "ignore": [
+      "node_modules",
+      "_old",
+      ".git",
+      ".cache",
+      "dist"
+    ],
+    "targets": {
+      "chrome": "last 1 version",
+      "firefox": "last 1 version"
+    }
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7
+    },
+    "plugins": [
+      "compat"
+    ],
+    "rules": {
+      "compat/compat": "warn"
+    }
+  },
+  "eslintIgnore": [
+    "dist/*",
+    "_old/*",
+    "node_modules/*",
+    ".cache/*"
+  ],
+  "stylelint": {
+    "plugins": [
+      "stylelint-no-unsupported-browser-features"
+    ],
+    "rules": {
+      "plugin/no-unsupported-browser-features": true
+    },
+    "defaultSeverity": "warning"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "postcss-normalize": "^7.0.1",
+    "postcss-preset-env": "^6.6.0"
+  },
+  "dependencies": {
+    "futils": "^3.1.1",
+    "futilsjs": "^1.0.0"
+  }
+}
