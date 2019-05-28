@@ -8,6 +8,10 @@
     "build": "parcel build ./src/index.html",
     "start": "parcel ./src/worklet.js ./src/index.html"
   },
+  "alias": {
+    "__futilsjs": "__futilsjs"
+  },
+  "files": [ "./src", "./__lib"],
   "keywords": [
     "javascript",
     "canvas",
@@ -83,14 +87,15 @@
     "defaultSeverity": "warning"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "autoprefixer": "^9.5.1",
     "postcss-normalize": "^7.0.1",
     "postcss-preset-env": "^6.6.0"
   },
   "dependencies": {
     "futils": "^3.1.1",
-    "futilsjs": "^1.0.0"
+    "futilsjs": "^1.0.0",
+    "lib": "^4.0.2"
   }
 }

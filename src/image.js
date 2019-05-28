@@ -1,4 +1,8 @@
-import { mathi_round, mathi_min, mathi_max } from 'futilsjs';
+import {
+  mathi_round,
+  mathi_min,
+  mathi_max
+} from '__futilsjs';
 
 export default class WaveImage {
   constructor() {

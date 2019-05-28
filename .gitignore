@@ -84,3 +84,4 @@ typings/
 
 # skip dist directory
 dist/
+__futilsjs/

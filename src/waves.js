@@ -6,7 +6,7 @@ import {
   mathi_max,
   mathi_min,
   mathi_round
-} from 'futilsjs';
+} from '__futilsjs';
 
 import { createWaveImage } from './image';
 

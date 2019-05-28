@@ -3,7 +3,7 @@ import {
   fetchImage,
   workletState as waveState,
   myRegisterPaint
-} from 'futilsjs';
+} from '__futilsjs';
 
 import { createWaveImage } from './image';
 import { createWaveEngine } from './waves';
